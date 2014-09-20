@@ -38,7 +38,7 @@
 
 ---
 ---
-#### Data:
+#### Data
 ![alt text](https://cloud.githubusercontent.com/assets/7516450/4346720/4995ef54-4110-11e4-8704-15e03766df7d.png)
 ---
 ---
