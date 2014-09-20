@@ -72,14 +72,15 @@ dataset_mean.std<-merged.sets[, c(1:2,2+mean.columns,2+std.columns) ]
 
 # cut() function divides the range of activity.data[,1] into 6 intervals and codes the values of the column activity.data[,2] according 
 # to which interval they fall
-merged.sets[,2]<-cut(merged.sets[,2],breaks=length(activity.data[,1]),as.vector(activity.data[,2]))
+dataset_mean.std[,2]<-cut(dataset_mean.std[,2],breaks=length(activity.data[,1]),as.vector(activity.data[,2]))
 
 
 ################################################################################
 # 4-Appropriately labels the data set with descriptive variable names. 
 ################################################################################
 
-colnames(merged.sets)<-c("subject","activity",as.vector(features.data[,2]))
+colnames(dataset_mean.std)<-c("Subject","ActivityDescription",
+                              c(as.vector(features.data[grepl("mean\\(\\)",features.data[,2]),2]),as.vector(features.data[grepl("std\\(\\)",features.data[,2]),2])))
 
 
 ################################################################################
@@ -87,12 +88,12 @@ colnames(merged.sets)<-c("subject","activity",as.vector(features.data[,2]))
 #   the average of each variable for each activity and each subject.
 ################################################################################
 
-# Create variable all.column.names with column names from merged.sets
-all.column.names<-colnames(merged.sets)
+# Create variable all.column.names with column names from dataset_mean.std
+all.column.names<-colnames(dataset_mean.std)
 
 # By using the function aggregate(), the data was splitted into subsets grouping by activity and subject
-dataset.average<-aggregate(merged.sets[,3:length(all.column.names)],
-                           list("subject"=merged.sets$subject,"activity"=merged.sets$activity), mean)
+dataset.average<-aggregate(dataset_mean.std[,3:length(all.column.names)],
+                           list("Subject"=dataset_mean.std$Subject,"ActivityDescription"=dataset_mean.std$ActivityDescription), mean)
 
 # The resulting tidy data set was writen to file: dataset.step5.txt
 write.table(dataset.average,file="dataset.step5.txt",row.name=FALSE)
