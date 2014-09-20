@@ -39,7 +39,7 @@
 ---
 ---
 #### Data:
-
+![alt text](https://https://github.com/livanalonso/Getting-Cleaning-Data-Course-Project/edit/master/data.png)
 ---
 ---
 #### Transformations (steps) from original data set to tidy data set
