@@ -1,11 +1,12 @@
 ### Code Book for Getting and Cleaning Data Course Project
+---
 
 #### Variables:
 
-
+---
 #### Data:
 
-
+---
 #### Transformations (steps) from original data set to tidy data set
 
 #####Step I: Download the data of project and unzip the downloaded file
