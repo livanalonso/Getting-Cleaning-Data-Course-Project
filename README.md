@@ -3,8 +3,8 @@
 
 #####This repository contains the following files:
 
-######1-run_analysis.R:
-######2-CodeBook.md: 
+######run_analysis.R: R script for performing the analysis
+######CodeBook.md: code book that describes the variables, the data, and all transformations that I performed to clean up the data
 
 
 
