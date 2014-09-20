@@ -82,7 +82,6 @@ merged.sets[,2]<-cut(merged.sets[,2],breaks=length(activity.data[,1]),as.vector(
 colnames(merged.sets)<-c("subject","activity",as.vector(features.data[,2]))
 
 
-
 ################################################################################
 # 5-From the data set in step 4, creates a second, independent tidy data set with 
 #   the average of each variable for each activity and each subject.
