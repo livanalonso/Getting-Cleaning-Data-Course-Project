@@ -17,14 +17,12 @@
 |path.subject_test path|Path to subject_test.txt||
 |features.data|Reads a file with path path.features in table format and creates a data frame|| 
 |activity.data|Reads a file with path path.activity in table format and creates a data frame||
-
-measurement_train.data<-read.table(path.measurement_train,header = FALSE)
-label_train.data<-read.table(path.label_train,header = FALSE)
-subject_train.data<-read.table(path.subject_train,header = FALSE)
-
-measurement_test.data<-read.table(path.measurement_test,header = FALSE)
-label_test.data<-read.table(path.label_test,header = FALSE)
-subject_test.data<-read.table(path.subject_test,header = FALSE)
+|measurement_train.data|Reads a file with path path.measurement_train in table format and creates a data frame||
+|label_train.data|Reads a file with path path.label_train in table format and creates a data frame||
+|subject_train.dataReads a file with path path.subject_train in table format and creates a data frame||
+|measurement_test.data|Reads a file with path path.measurement_test in table format and creates a data frame||
+|label_test.data|Reads a file with path path.label_test in table format and creates a data frame||
+|subject_test.data|Reads a file with path path.subject_test in table format and creates a data frame||
 
 
 ################################################################################
