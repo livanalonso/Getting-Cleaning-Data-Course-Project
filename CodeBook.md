@@ -6,10 +6,8 @@
 | Variable                 | Description                                  | Units  |
 | ------------------------ |:--------------------------------------------:| ------:|
 |fileUrl                   |URL of the data to be downloaded              |        |
-
-
-2. dir: path of directory where data was unzipped  
-3. path.features: path to features.txt file
+|dir                       |path of directory where data was unzipped     |        |  
+|path.features             |path to features.txt file |                          |
 4. path.activity: path to activity_labels.txt file
 5. path.measurement_train: path to X_train.txt file
 6. path.label_train: path to y_train.txt file
