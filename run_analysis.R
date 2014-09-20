@@ -90,4 +90,7 @@ all.column.names<-colnames(merged.sets)
 
 dataset.average<-aggregate(merged.sets[,3:length(all.column.names)],
                            list("subject"=merged.sets$subject,"activity"=merged.sets$activity), mean)
+                           
 write.table(dataset.average,file="dataset.step5.txt",row.name=FALSE)
+
+print(dataset.average)
