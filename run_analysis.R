@@ -56,14 +56,14 @@ merged.sets<-cbind(subject_data,label_data,measurement_data)
 # 2-Extracts only the measurements on the mean and standard deviation for each measurement. 
 ################################################################################
 
-# By using grepl() function, a logical vector can be created to search matches with mean() and st() labeled columns.
-# By using which() function, indexes can be extrated
+# By using grepl() function, a logical vector can be created to search matches with mean() and std() labeled columns.
+# By using which() function, indices can be extrated
 mean.columns<-which(grepl("mean\\(\\)",features.data[,2]))
-st.columns<-which(grepl("std\\(\\)",features.data[,2]))
+std.columns<-which(grepl("std\\(\\)",features.data[,2]))
 
-# create dataset_mean.st containing subject, label information and mean() and std() measurements
+# create dataset_mean.std containing subject, label information and mean() and std() measurements
 # 2 was sumed because first two columns correspond to subject and label data 
-dataset_mean.st<-merged.sets[, c(1:2,2+mean.columns,2+st.columns) ]
+dataset_mean.std<-merged.sets[, c(1:2,2+mean.columns,2+std.columns) ]
 
 
 ################################################################################
