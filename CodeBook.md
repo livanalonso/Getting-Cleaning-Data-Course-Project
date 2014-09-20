@@ -23,16 +23,9 @@
 |measurement_test.data|Data frame created from reading file with path path.measurement_test||
 |label_test.data|Data frame created from reading file with path path.label_test||
 |subject_test.data|Data frame created from reading file with path path.subject_test||
-
-
-################################################################################
-# 1-Merges the training and the test sets to create one data set.
-################################################################################
-
-# Merging train and test data by using rbind() function
-measurement_data<-rbind(measurement_train.data,measurement_test.data)
-label_data<-rbind(label_train.data,label_test.data)
-subject_data<-rbind(subject_train.data,subject_test.data)
+|measurement_data|Data frame resulted from merging data frames: measurement_train.data and measurement_test.data||
+|label_data|Data frame resulted from merging data frames: label_train.data and label_test.data||
+|subject_data|Data frame resulted from merging data frames: subject_train.data and subject_test.data||
 
 # Merging all columns containing subject, activity labels and measurements
 merged.sets<-cbind(subject_data,label_data,measurement_data)
