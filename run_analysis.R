@@ -86,11 +86,16 @@ colnames(merged.sets)<-c("subject","activity",as.vector(features.data[,2]))
 # 5-From the data set in step 4, creates a second, independent tidy data set with 
 #   the average of each variable for each activity and each subject.
 ################################################################################
+
+# Create variable all.column.names with column names from merged.sets
 all.column.names<-colnames(merged.sets)
 
+# By using the function aggregate(), the data was splitted into subsets grouping by activity and subject
 dataset.average<-aggregate(merged.sets[,3:length(all.column.names)],
                            list("subject"=merged.sets$subject,"activity"=merged.sets$activity), mean)
-                           
+
+# The resulting tidy data set was writen to file: dataset.step5.txt
 write.table(dataset.average,file="dataset.step5.txt",row.name=FALSE)
 
+# Printing dataset
 print(dataset.average)
