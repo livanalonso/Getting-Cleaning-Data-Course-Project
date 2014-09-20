@@ -26,23 +26,10 @@
 |measurement_data|Data frame resulted from merging data frames: measurement_train.data and measurement_test.data||
 |label_data|Data frame resulted from merging data frames: label_train.data and label_test.data||
 |subject_data|Data frame resulted from merging data frames: subject_train.data and subject_test.data||
-
-# Merging all columns containing subject, activity labels and measurements
-merged.sets<-cbind(subject_data,label_data,measurement_data)
-
-
-################################################################################
-# 2-Extracts only the measurements on the mean and standard deviation for each measurement. 
-################################################################################
-
-# By using grepl() function, a logical vector can be created to search matches with mean() and st() labeled columns.
-# By using which() function, indexes can be extrated
-mean.columns<-which(grepl("mean\\(\\)",features.data[,2]))
-st.columns<-which(grepl("std\\(\\)",features.data[,2]))
-
-# create dataset_mean.st containing subject, label information and mean() and std() measurements
-# 2 was sumed because first two columns correspond to subject and label data 
-dataset_mean.st<-merged.sets[, c(1:2,2+mean.columns,2+st.columns) ]
+|merged.sets|Data frame resulted from merging data frames: subject_data,label_data and measurement_data||
+|mean.columns|Vector containing indices of names of column where mean was measured ||
+|std.columns|Vector containing indices of names of column where mean was measured ||
+|dataset_mean.std|Data frame resulted from subsetting only the measurements on the mean and standard deviation for each measurement||
 
 
 ################################################################################
