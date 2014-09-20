@@ -80,7 +80,8 @@ dataset_mean.std[,2]<-cut(dataset_mean.std[,2],breaks=length(activity.data[,1]),
 ################################################################################
 
 colnames(dataset_mean.std)<-c("Subject","ActivityDescription",
-                              c(as.vector(features.data[grepl("mean\\(\\)",features.data[,2]),2]),as.vector(features.data[grepl("std\\(\\)",features.data[,2]),2])))
+                              c(as.vector(features.data[grepl("mean\\(\\)",features.data[,2]),2]),
+                                as.vector(features.data[grepl("std\\(\\)",features.data[,2]),2])))
 
 
 ################################################################################
@@ -89,11 +90,16 @@ colnames(dataset_mean.std)<-c("Subject","ActivityDescription",
 ################################################################################
 
 # Create variable all.column.names with column names from dataset_mean.std
-all.column.names<-colnames(dataset_mean.std)
+##all.column.names<-colnames(dataset_mean.std)
+all.column.names<-paste("Avg.",as.character(colnames(dataset_mean.std)),sep="")
+
 
 # By using the function aggregate(), the data was splitted into subsets grouping by activity and subject
 dataset.average<-aggregate(dataset_mean.std[,3:length(all.column.names)],
                            list("Subject"=dataset_mean.std$Subject,"ActivityDescription"=dataset_mean.std$ActivityDescription), mean)
+
+# Add to column names [3:68]  from dataset.average the prefix Avg. 
+colnames(dataset.average)<-c("Subject","ActivityDescription",all.column.names[3:length(all.column.names)])
 
 # The resulting tidy data set was writen to file: dataset.step5.txt
 write.table(dataset.average,file="dataset.step5.txt",row.name=FALSE)
