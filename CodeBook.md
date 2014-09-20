@@ -30,35 +30,8 @@
 |mean.columns|Vector containing indices of names of column where mean was measured ||
 |std.columns|Vector containing indices of names of column where mean was measured ||
 |dataset_mean.std|Data frame resulted from subsetting only the measurements on the mean and standard deviation for each measurement||
-
-
-################################################################################
-# 3-Uses descriptive activity names to name the activities in the data set
-################################################################################
-
-# cut() function divides the range of activity.data[,1] into 6 intervals and codes the values of the column activity.data[,2] according 
-# to which interval they fall
-merged.sets[,2]<-cut(merged.sets[,2],breaks=length(activity.data[,1]),as.vector(activity.data[,2]))
-
-
-################################################################################
-# 4-Appropriately labels the data set with descriptive variable names. 
-################################################################################
-
-colnames(merged.sets)<-c("subject","activity",as.vector(features.data[,2]))
-
-
-
-################################################################################
-# 5-From the data set in step 4, creates a second, independent tidy data set with 
-#   the average of each variable for each activity and each subject.
-################################################################################
-all.column.names<-colnames(merged.sets)
-
-dataset.average<-aggregate(merged.sets[,3:length(all.column.names)],
-                           list("subject"=merged.sets$subject,"activity"=merged.sets$activity), mean)
-write.table(dataset.average,file="dataset.step5.txt",row.name=FALSE)
-
+|all.column.names|Column names from merged.sets data frame||
+|dataset.average|Data frame with the average of each variable for each activity and each subject||
 
 
 
