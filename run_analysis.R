@@ -70,7 +70,8 @@ dataset_mean.st<-merged.sets[, c(1:2,2+mean.columns,2+st.columns) ]
 # 3-Uses descriptive activity names to name the activities in the data set
 ################################################################################
 
-# cut() function divides the range of activity.data[,1] into 
+# cut() function divides the range of activity.data[,1] into 6 intervals and codes the values of the column activity.data[,2] according 
+# to which interval they fall
 merged.sets[,2]<-cut(merged.sets[,2],breaks=length(activity.data[,1]),as.vector(activity.data[,2]))
 
 
@@ -81,11 +82,11 @@ merged.sets[,2]<-cut(merged.sets[,2],breaks=length(activity.data[,1]),as.vector(
 colnames(merged.sets)<-c("subject","activity",as.vector(features.data[,2]))
 
 
+
 ################################################################################
 # 5-From the data set in step 4, creates a second, independent tidy data set with 
 #   the average of each variable for each activity and each subject.
 ################################################################################
-
 all.column.names<-colnames(merged.sets)
 
 dataset.average<-aggregate(merged.sets[,3:length(all.column.names)],
