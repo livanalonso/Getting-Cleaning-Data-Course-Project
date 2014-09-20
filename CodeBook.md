@@ -15,14 +15,14 @@
 |path.measurement_test|Path to X_test.txt file||
 |path.label_test|Path to y_test.txt file||
 |path.subject_test path|Path to subject_test.txt||
-|features.data|Reads a file with path path.features in table format and creates a data frame|| 
-|activity.data|Reads a file with path path.activity in table format and creates a data frame||
-|measurement_train.data|Reads a file with path path.measurement_train in table format and creates a data frame||
-|label_train.data|Reads a file with path path.label_train in table format and creates a data frame||
-|subject_train.data|Reads a file with path path.subject_train in table format and creates a data frame||
-|measurement_test.data|Reads a file with path path.measurement_test in table format and creates a data frame||
-|label_test.data|Reads a file with path path.label_test in table format and creates a data frame||
-|subject_test.data|Reads a file with path path.subject_test in table format and creates a data frame||
+|features.data|Data frame created from reading file with path path.features|| 
+|activity.data|Data frame created from reading file with path path.activity||
+|measurement_train.data|Data frame created from reading file with path path.measurement_train||
+|label_train.data|Data frame created from reading file with path path.label_train||
+|subject_train.data|Data frame created from reading file with path path.subject_train||
+|measurement_test.data|Data frame created from reading file with path path.measurement_test||
+|label_test.data|Data frame created from reading file with path path.label_test||
+|subject_test.data|Data frame created from reading file with path path.subject_test||
 
 
 ################################################################################
