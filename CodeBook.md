@@ -6,19 +6,17 @@
 | Variable                 | Description                                  | Units  |
 | ------------------------ |:--------------------------------------------:| ------:|
 |fileUrl|URL of the data to be downloaded||
-|dir|path of directory where data was unzipped||  
-|path.features|path to features.txt file ||
-|path.activity|path to activity_labels.txt file||
-|path.measurement_train|path to X_train.txt file||
-|path.label_train|path to y_train.txt file||
-|path.subject_train|path to subject_train.txt file||
-|path.measurement_test|path to X_test.txt file||
+|dir|Path of directory where data was unzipped||  
+|path.features|Path to features.txt file ||
+|path.activity|Path to activity_labels.txt file||
+|path.measurement_train|Path to X_train.txt file||
+|path.label_train|Path to y_train.txt file||
+|path.subject_train|Path to subject_train.txt file||
+|path.measurement_test|Path to X_test.txt file||
 |path.label_test|path to y_test.txt file||
-|path.subject_test path|path to subject_test.txt||
-
-# Reading files
-features.data<-read.table(path.features,header = FALSE)
-activity.data<-read.table(path.activity,header = FALSE)
+|path.subject_test path|Path to subject_test.txt||
+|features.data|Reads a file with path path.features in table format and creates a data frame|| 
+|activity.data||Reads a file with path path.activity in table format and creates a data frame||
 
 measurement_train.data<-read.table(path.measurement_train,header = FALSE)
 label_train.data<-read.table(path.label_train,header = FALSE)
