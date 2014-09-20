@@ -19,7 +19,7 @@
 |activity.data|Reads a file with path path.activity in table format and creates a data frame||
 |measurement_train.data|Reads a file with path path.measurement_train in table format and creates a data frame||
 |label_train.data|Reads a file with path path.label_train in table format and creates a data frame||
-|subject_train.dataReads a file with path path.subject_train in table format and creates a data frame||
+|subject_train.data|Reads a file with path path.subject_train in table format and creates a data frame||
 |measurement_test.data|Reads a file with path path.measurement_test in table format and creates a data frame||
 |label_test.data|Reads a file with path path.label_test in table format and creates a data frame||
 |subject_test.data|Reads a file with path path.subject_test in table format and creates a data frame||
