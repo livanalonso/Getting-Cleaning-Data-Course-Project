@@ -3,18 +3,20 @@
 ---
 #### Variables
 
-fileUrl: URL of the data to be downloaded
-dir: path of directory where data was unzipped  
-path.features: path to features.txt file
-path.activity: path to activity_labels.txt file
-path.measurement_train: path to X_train.txt file
-path.label_train<-paste(dir,"/train/y_train.txt",sep="")
-path.subject_train<-paste(dir,"/train/subject_train.txt",sep="")
+| Variable                 | Description                                  | Units  |
+| ------------------------ |:--------------------------------------------:| ------:|
+|fileUrl                   |URL of the data to be downloaded              |        |
 
-# path to test folder files
-path.measurement_test<-paste(dir,"/test/X_test.txt",sep="")
-path.label_test<-paste(dir,"/test/y_test.txt",sep="")
-path.subject_test<-paste(dir,"/test/subject_test.txt",sep="")
+
+2. dir: path of directory where data was unzipped  
+3. path.features: path to features.txt file
+4. path.activity: path to activity_labels.txt file
+5. path.measurement_train: path to X_train.txt file
+6. path.label_train: path to y_train.txt file
+7. path.subject_train: path to subject_train.txt file
+8. path.measurement_test: path to X_test.txt file
+9. path.label_test path to y_test.txt file
+10. path.subject_test path to <-paste(dir,"/test/subject_test.txt",sep="")
 
 # Reading files
 features.data<-read.table(path.features,header = FALSE)
