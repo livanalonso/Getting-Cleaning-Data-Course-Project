@@ -30,7 +30,7 @@
 |mean.columns|Vector containing indices of names of column where mean was measured ||
 |std.columns|Vector containing indices of names of column where mean was measured ||
 |dataset_mean.std|Data frame resulted from subsetting only the measurements on the mean and standard deviation for each measurement||
-|all.column.names|Column names from merged.sets data frame||
+|all.column.names|Column names from |dataset_mean.std data frame||
 |dataset.average|Data frame with the average of each variable for each activity and each subject||
 
 
@@ -62,9 +62,9 @@
 
 
 #####Step VI: Appropriately labels the data set with descriptive variable names (step 4 from assignment)
-        a) create new column names for merged.sets using the colnames() function.
+        a) create column names for |dataset_mean.std using the colnames() function.
 
 #####Step VII: Create a second, independent tidy data set with the average of each variable for each activity and each subject (step 5 from assignment)
-          a) Create variable all.column.names with column names from merged.sets.
+          a) Create variable all.column.names with column names from |dataset_mean.std.
           b) By using the function aggregate(), the data was splitted into subsets grouping by activity and subject
           c) Finally, the resulting tidy data set was writen to file:  dataset.step5.txt.
