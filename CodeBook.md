@@ -5,18 +5,18 @@
 
 | Variable                 | Description                                  | Units  |
 | :------------------------ |:--------------------------------------------| ------|
-|fileUrl|*URL of the data to be downloaded||
-|dir|.Path of directory where data was unzipped||  
-|path.features|.Path to features.txt file ||
-|path.activity|.Path to activity_labels.txt file||
-|path.measurement_train|.Path to X_train.txt file||
-|path.label_train|.Path to y_train.txt file||
-|path.subject_train|.Path to subject_train.txt file||
-|path.measurement_test|.Path to X_test.txt file||
-|path.label_test|.Path to y_test.txt file||
-|path.subject_test path|.Path to subject_test.txt||
-|features.data|.Reads a file with path path.features in table format and creates a data frame|| 
-|activity.data|.Reads a file with path path.activity in table format and creates a data frame||
+|fileUrl|URL of the data to be downloaded||
+|dir|Path of directory where data was unzipped||  
+|path.features|Path to features.txt file ||
+|path.activity|Path to activity_labels.txt file||
+|path.measurement_train|Path to X_train.txt file||
+|path.label_train|Path to y_train.txt file||
+|path.subject_train|Path to subject_train.txt file||
+|path.measurement_test|Path to X_test.txt file||
+|path.label_test|Path to y_test.txt file||
+|path.subject_test path|Path to subject_test.txt||
+|features.data|Reads a file with path path.features in table format and creates a data frame|| 
+|activity.data|Reads a file with path path.activity in table format and creates a data frame||
 
 measurement_train.data<-read.table(path.measurement_train,header = FALSE)
 label_train.data<-read.table(path.label_train,header = FALSE)
