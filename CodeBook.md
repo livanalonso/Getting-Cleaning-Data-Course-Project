@@ -30,7 +30,7 @@
 |mean.columns|Vector containing indices of names of column where mean was measured ||
 |std.columns|Vector containing indices of names of column where mean was measured ||
 |dataset_mean.std|Data frame resulted from subsetting only the measurements on the mean and standard deviation for each measurement||
-|all.column.names|Column names from |dataset_mean.std data frame||
+|all.column.names|Column names from dataset_mean.std data frame||
 |dataset.average|Data frame with the average of each variable for each activity and each subject||
 
 
@@ -39,7 +39,7 @@
 ---
 ---
 #### Data
-![alt text](https://cloud.githubusercontent.com/assets/7516450/4346720/4995ef54-4110-11e4-8704-15e03766df7d.png)
+![alt text](https://cloud.githubusercontent.com/assets/7516450/4346840/bc26f14a-4119-11e4-950d-d1e9845cf61f.png)
 ---
 ---
 #### Transformations (steps) from original data set to tidy data set
