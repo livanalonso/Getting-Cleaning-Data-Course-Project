@@ -5,7 +5,7 @@
 
 | Variable                 | Description                                  | Units  |
 | ------------------------ |:--------------------------------------------:| ------:|
-|fileUrl|.URL of the data to be downloaded||
+|fileUrl|*URL of the data to be downloaded||
 |dir|.Path of directory where data was unzipped||  
 |path.features|.Path to features.txt file ||
 |path.activity|.Path to activity_labels.txt file||
