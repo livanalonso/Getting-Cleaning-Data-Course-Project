@@ -1,7 +1,10 @@
 ##Coursera: Getting and Cleaning Data Course Project
 ==================================================
 
-##Scripts:
+## This repository contains the following files:
+
+### 1-
+### 2-
 
 
 
