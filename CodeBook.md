@@ -16,7 +16,7 @@
 |path.label_test|path to y_test.txt file||
 |path.subject_test path|Path to subject_test.txt||
 |features.data|Reads a file with path path.features in table format and creates a data frame|| 
-|activity.data||Reads a file with path path.activity in table format and creates a data frame||
+|activity.data|Reads a file with path path.activity in table format and creates a data frame||
 
 measurement_train.data<-read.table(path.measurement_train,header = FALSE)
 label_train.data<-read.table(path.label_train,header = FALSE)
