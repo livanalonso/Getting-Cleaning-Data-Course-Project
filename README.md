@@ -9,4 +9,4 @@
 
 ---
 
-run_analysis.R script has been running in R version 3.1.1 (2014-07-10).
+run_analysis.R script running in R version 3.1.1 (2014-07-10).
