@@ -53,7 +53,7 @@
 
 #####Step IV: Extracts only the measurements on the mean and standard deviation for each measurement (step 2 from assignment)
         a) By using grepl() function, a logical vector can be created to search matches with mean() and st() labeled columns.
-        b) By using which() function, indexes can be extrated
+        b) By using which() function, indexes can be extrated.
         c) Finally the dataset_mean.st was created subsetting the merge.sets data.table based on a) and b) indexes.
 
 #####Step V: Use descriptive activity names to name the activities in the data set  (step 3 from assignment)
@@ -65,6 +65,6 @@
         a) create column names for |dataset_mean.std using the colnames() function.
 
 #####Step VII: Create a second, independent tidy data set with the average of each variable for each activity and each subject (step 5 from assignment)
-          a) Create variable all.column.names with column names from |dataset_mean.std.
-          b) By using the function aggregate(), the data was splitted into subsets grouping by activity and subject
+          a) Create variable all.column.names with column names from dataset_mean.std.
+          b) By using the function aggregate(), the data was splitted into subsets grouping by activity and subject.
           c) Finally, the resulting tidy data set was writen to file:  dataset.step5.txt.
