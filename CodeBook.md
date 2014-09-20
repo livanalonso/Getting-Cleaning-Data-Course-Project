@@ -1,12 +1,12 @@
-## Code Book for Getting and Cleaning Data Course Project
+# Code Book for Getting and Cleaning Data Course Project
 
-### Variables:
-
-
-### Data:
+## Variables:
 
 
-### Transformations (steps) from original data set to tidy data set
+## Data:
+
+
+## Transformations (steps) from original data set to tidy data set
 
 ####Step I: Download the data of project and unzip the downloaded file
 
@@ -28,8 +28,7 @@
 ####Step VI: Appropriately labels the data set with descriptive variable names (step 4 from assignment)
         a) create new column names for merged.sets using the colnames() function.
 
-####Step VII: Create a second, independent tidy data set with the average of each variable for each activity and each subject
-####          (step 5 from assignment)
+####Step VII: Create a second, independent tidy data set with the average of each variable for each activity and each subject (step 5 from assignment)
           a) Create variable all.column.names with column names from merged.sets
           b) By using the function aggregate(), the data was splitted into subsets grouping by activity and subject
           c) Finally, the resulting tidy data set was writen to file:  dataset.step5.txt.
