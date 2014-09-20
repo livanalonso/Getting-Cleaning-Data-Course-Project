@@ -7,5 +7,6 @@
 ######2. Readme.md: this file explains how all of the scripts work and how they are connected.
 ######3. run_analysis.R: R script for performing the analysis
 
+---
 
-
+run_analysis.R script has been running in R version 3.1.1 (2014-07-10).
