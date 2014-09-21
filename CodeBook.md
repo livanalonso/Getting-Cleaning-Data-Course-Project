@@ -3,8 +3,8 @@
 ---
 #### Variables
 
-| Variable                 | Description                                  | Units  |
-| :------------------------ |:--------------------------------------------| ------|
+| Variable                 | Description                                  | 
+| :------------------------ |:--------------------------------------------|
 |fileUrl|URL of the data to be downloaded||
 |dir|Path of directory where data was unzipped||  
 |path.features|Path to features.txt file ||
