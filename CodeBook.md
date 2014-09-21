@@ -49,7 +49,7 @@
 #####Step II: Files were read using read.table() function
 
 #####Step III: Merge the training and test data set (step 1 from assignment)
-      a) by using rbind() function and later merge all columns containing subject, activity labels and measurements
+      a) by using rbind() function to merge rows and later cbind() function to merge all columns containing subject, activity labels and measurements.
 
 #####Step IV: Extracts only the measurements on the mean and standard deviation for each measurement (step 2 from assignment)
         a) By using grepl() function, a logical vector can be created to search matches with mean() and st() labeled columns.
