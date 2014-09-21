@@ -54,7 +54,7 @@
 #####Step IV: Extracts only the measurements on the mean and standard deviation for each measurement (step 2 from assignment)
         a) By using grepl() function, a logical vector can be created to search matches with mean() and st() labeled columns.
         b) By using which() function, indexes can be extrated.
-        c) Finally the dataset_mean.st was created subsetting the merge.sets data.table based on a) and b) indexes.
+        c) Finally the dataset_mean.st was created subsetting the merged.sets data table based on a) and b) indexes.
 
 #####Step V: Use descriptive activity names to name the activities in the data set  (step 3 from assignment)
         a) cut() function divides the range of activity.data[,1] into 6 intervals and codes the values of the column
