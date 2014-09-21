@@ -62,7 +62,7 @@
 
 
 #####Step VI: Appropriately labels the data set with descriptive variable names (step 4 from assignment)
-        a) create column names for |dataset_mean.std using the colnames() function.
+        a) create column names for dataset_mean.std using the colnames() function.
 
 #####Step VII: Create a second, independent tidy data set with the average of each variable for each activity and each subject (step 5 from assignment)
           a) Create variable all.column.names with column names from dataset_mean.std.
