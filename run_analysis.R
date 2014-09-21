@@ -79,6 +79,8 @@ dataset_mean.std[,2]<-cut(dataset_mean.std[,2],breaks=length(activity.data[,1]),
 # 4-Appropriately labels the data set with descriptive variable names. 
 ################################################################################
 
+################################################################################
+# Similar procedure to Step 2 was used to extract names of columns 
 colnames(dataset_mean.std)<-c("Subject","ActivityDescription",
                               c(as.vector(features.data[grepl("mean\\(\\)",features.data[,2]),2]),
                                 as.vector(features.data[grepl("std\\(\\)",features.data[,2]),2])))
