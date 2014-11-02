@@ -1,7 +1,7 @@
-### Code Book for Getting and Cleaning Data Course Project
+## Code Book for Getting and Cleaning Data Course Project
 ---
 ---
-#### Variables
+### Variables
 
 | Variable                 | Description                                  | 
 | :------------------------ |:--------------------------------------------|
